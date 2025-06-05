@@ -1,0 +1,47 @@
+# 🎯 Missão 1 — Criar branch e commit
+
+## 📋 Objetivo
+Aprender a criar branches e fazer commits no Git.
+
+## 🚀 Passos
+
+1. **Criar branch**
+   ```bash
+   git checkout -b missao-1
+   ```
+
+2. **Criar arquivo**
+   - Crie um arquivo chamado `apresentacao.txt`
+   - Adicione uma frase que apresente o grupo
+   - Exemplo: "Somos o grupo [nome] e estamos aprendendo Git!"
+
+3. **Fazer commit**
+   ```bash
+   git add apresentacao.txt
+   git commit -m "feat: adicionar apresentação do grupo"
+   ```
+
+4. **Enviar alterações**
+   ```bash
+   git push origin missao-1
+   ```
+
+5. **Criar Pull Request**
+   - Vá para o GitHub
+   - Clique em "New Pull Request"
+   - Selecione `missao-1` como base
+   - Adicione uma descrição
+   - Crie o PR
+
+## 💡 Dicas
+- Verifique se está na branch correta com `git branch`
+- Use `git status` para ver o estado dos arquivos
+- Revise o arquivo antes de commitar
+
+## ✅ Critérios de Sucesso
+- [ ] Branch criada corretamente
+- [ ] Arquivo criado com apresentação
+- [ ] Commit feito com mensagem correta
+- [ ] PR aberto para a main
+
+Boa sorte! 🚀

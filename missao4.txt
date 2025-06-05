@@ -1,0 +1,61 @@
+# 🎯 Missão 4 — Usar .gitignore
+
+## 📋 Objetivo
+Aprender a usar o .gitignore para excluir arquivos do controle de versão.
+
+## 🚀 Passos
+
+1. **Criar branch**
+   ```bash
+   git checkout -b missao-4
+   ```
+
+2. **Criar arquivo secreto**
+   - Crie o arquivo `segredo.txt`
+   - Adicione qualquer conteúdo
+   - Exemplo: "Esta é uma informação secreta!"
+
+3. **Verificar .gitignore**
+   - Abra o arquivo `.gitignore`
+   - Verifique se `segredo.txt` está listado
+   - Se não estiver, adicione:
+     ```
+     segredo.txt
+     ```
+
+4. **Testar o .gitignore**
+   ```bash
+   git status
+   ```
+   - O arquivo `segredo.txt` NÃO deve aparecer na lista
+
+5. **Fazer commit**
+   ```bash
+   git add .gitignore
+   git commit -m "chore: adicionar arquivo secreto e ignorar no git"
+   git push origin missao-4
+   ```
+
+6. **Criar Pull Request**
+   - Vá para o GitHub
+   - Clique em "New Pull Request"
+   - Selecione `missao-4` como base
+   - Adicione uma descrição
+   - Crie o PR
+
+## 💡 Dicas
+- Use `git check-ignore` para verificar se um arquivo está sendo ignorado
+- Padrões comuns no .gitignore:
+  - `*.log` - ignora todos os arquivos .log
+  - `node_modules/` - ignora a pasta node_modules
+  - `.env` - ignora arquivos de ambiente
+- Sempre verifique o status antes de commitar
+
+## ✅ Critérios de Sucesso
+- [ ] Branch criada corretamente
+- [ ] Arquivo secreto criado
+- [ ] .gitignore configurado
+- [ ] Arquivo secreto não aparece no git status
+- [ ] PR aberto para a main
+
+Boa sorte! 🚀

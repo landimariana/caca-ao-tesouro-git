@@ -1,0 +1,64 @@
+# 🎯 Missão 3 — Resolver conflito simples
+
+## 📋 Objetivo
+Aprender a resolver conflitos de merge no Git.
+
+## 🚀 Passos
+
+1. **Criar branch**
+   ```bash
+   git checkout -b missao-3
+   ```
+
+2. **Editar arquivo**
+   - Abra o arquivo `conflito.txt`
+   - Adicione uma frase qualquer
+   - Exemplo: "Esta é minha contribuição para o arquivo!"
+
+3. **Fazer commit e push**
+   ```bash
+   git add conflito.txt
+   git commit -m "feat: adicionar frase ao conflito.txt"
+   git push origin missao-3
+   ```
+
+4. **Resolver conflito**
+   - A instrutora fará uma alteração na `main`
+   - Atualize sua branch:
+     ```bash
+     git checkout main
+     git pull origin main
+     git checkout missao-3
+     git merge main
+     ```
+   - Resolva o conflito no arquivo `conflito.txt`
+   - Remova os marcadores de conflito (`<<<<<<<`, `=======`, `>>>>>>>`)
+   - Mantenha o conteúdo que fizer mais sentido
+
+5. **Commit da resolução**
+   ```bash
+   git add conflito.txt
+   git commit -m "fix: resolver conflito no conflito.txt"
+   git push origin missao-3
+   ```
+
+6. **Criar Pull Request**
+   - Vá para o GitHub
+   - Clique em "New Pull Request"
+   - Selecione `missao-3` como base
+   - Adicione uma descrição
+   - Crie o PR
+
+## 💡 Dicas
+- Use `git status` para ver arquivos com conflito
+- Use `git diff` para ver as diferenças
+- Mantenha a calma ao resolver conflitos
+- Revise o arquivo após resolver o conflito
+
+## ✅ Critérios de Sucesso
+- [ ] Branch criada corretamente
+- [ ] Conflito resolvido manualmente
+- [ ] Commit da resolução feito
+- [ ] PR aberto para a main
+
+Boa sorte! 🚀
